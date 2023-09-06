@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #2222;
+    font-family: 'Inter';
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    background: #ffff;
+}
+.txt-div {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+input,button {
+    padding: 15px;
+}
+input {
+    border: 1px solid purple;
+    outline: none;
+    border-radius: 2px;
+}
+button {
+    margin-top: 10px;
+    background: purple;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+}
+button i {
+    padding-left: 10px;
+}
+#img-bx {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#img-bx img {
+     width: 100%;
+     padding: 10px;
+}
+#img-bx.show-Img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
